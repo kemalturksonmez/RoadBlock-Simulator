@@ -1,0 +1,6 @@
+BridgerRoad.c is a program I created in order to simulate a real traffic simulation through the use of randomized sleep() functions and thread creation. The simulation is possible through thread synchronization with the use of mutex locks and tracker variables. I designed the program to force a traffic direction switch when twice the maximum amount of allowed cars allowed have crossed the road. 
+
+The program compiles with the command: gcc -std=c99 BridgerRoad.c.c -o br -lpthread
+
+To run the program, the command is: ./br [Total Number of Cars] [Max Cars] [Time]
+The program can also run without the [Time] argument. It will assume that there is no time between cars arriving to wait, meaning that it will wait zero seconds.
